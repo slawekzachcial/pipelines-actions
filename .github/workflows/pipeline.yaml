@@ -1,0 +1,14 @@
+name: Pipelines - Actions
+
+on: push
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo 'Check spelling'
+      - run: echo 'Check links'
+      - run: echo 'Create release'
+      - run: echo 'Deploy release'
