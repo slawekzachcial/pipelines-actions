@@ -22,6 +22,7 @@ The pipeline, when run on `main` branch, creates a new Git tag. The tag name is
 determined using [Angular Commit Message
 Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines).
 
+
 ## Release Deployment
 
 The pipeline, when run on `main` branch, deploys release by copying markdown
