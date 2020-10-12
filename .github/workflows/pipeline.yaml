@@ -15,5 +15,9 @@ jobs:
       - name: Check links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
 
+      - name: Create Git tag
+        uses: mathieudutour/github-tag-action@v4.6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - run: echo 'Create release'
       - run: echo 'Deploy release'
