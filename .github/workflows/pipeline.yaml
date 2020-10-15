@@ -1,6 +1,12 @@
 name: Pipelines - Actions
 
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   pipeline:
@@ -17,13 +23,14 @@ jobs:
 
       - name: Create Git tag
         uses: mathieudutour/github-tag-action@v4.6
+        if: github.ref == 'main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           release_branches: main
-      #- run: echo 'Create release'
 
       - name: Deploy Pages
         uses: devmasx/merge-branch@v1.3.0
+        if: github.ref == 'main'
         with:
           type: now
           head_to_merge: ${{ github.ref }}
