@@ -1,5 +1,7 @@
 # Pipelines: GitHub Actions
 
+![Pipelines - Actions](https://github.com/slawekzachcial/pipelines-actions/workflows/Pipelines%20-%20Actions/badge.svg?branch=main)
+
 This project implements a simple [Continuous Delivery
 Pipeline](https://en.wikipedia.org/wiki/Continuous_delivery), based on [GitHub
 Actions](https://docs.github.com/en/free-pro-team@latest/actions).
@@ -24,7 +26,5 @@ Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-gi
 
 ## Release Deployment
 
-The pipeline, when run on `main` branch, deploys release by copying markdown
-files into `gh-pages` branch. The deployment happens only if the markdown files
-have been updated. The commit message in `gh-pages` branch contains the release
-version number.
+The pipeline, when run on `main` branch, deploys release by merging markdown
+files into `gh-pages` branch.
