@@ -16,12 +16,11 @@ The pipeline checks the spelling of all markdown files in this repository.
 
 The pipeline checks the links of all markdown files in this repository.
 
-## Git Tag and Release Creation
+## Git Tag Creation
 
 The pipeline, when run on `main` branch, creates a new Git tag. The tag name is
 determined using [Angular Commit Message
 Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines).
-
 
 ## Release Deployment
 

@@ -20,5 +20,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           release_branches: main
-      - run: echo 'Create release'
-      - run: echo 'Deploy release'
+      #- run: echo 'Create release'
+
+      - name: Deploy Pages
+        uses: devmasx/merge-branch@v1.3.0
+        with:
+          type: now
+          target_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
