@@ -35,9 +35,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
-          tag_name: ${{ steps.create_tag.new_tag }}
-          release_name: ${{ steps.create_tag.new_tag }}
-          body: ${{ steps.create_tag.changelog }}
+          tag_name: ${{ steps.create_tag.outputs.new_tag }}
+          release_name: ${{ steps.create_tag.outputs.new_tag }}
+          body: ${{ steps.create_tag.outputs.changelog }}
 
       - name: Deploy Pages
         uses: devmasx/merge-branch@v1.3.0
