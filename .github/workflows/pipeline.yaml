@@ -25,7 +25,7 @@ jobs:
         uses: mathieudutour/github-tag-action@v4.6
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ github.token }}
           release_branches: main
 
       - name: Deploy Pages
@@ -35,4 +35,4 @@ jobs:
           type: now
           head_to_merge: ${{ github.ref }}
           target_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ github.token }}
