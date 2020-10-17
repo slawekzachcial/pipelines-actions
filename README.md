@@ -1,6 +1,6 @@
 # Pipelines: GitHub Actions
 
-![Pipelines - Actions](https://github.com/slawekzachcial/pipelines-actions/workflows/Pipelines%20-%20Actions/badge.svg?branch=main)
+[![Pipelines - Actions](https://github.com/slawekzachcial/pipelines-actions/workflows/Pipelines%20-%20Actions/badge.svg?branch=main)](https://github.com/slawekzachcial/pipelines-actions/actions?query=workflow%3A%22Pipelines+-+Actions%22)
 
 This project implements a simple [Continuous Delivery
 Pipeline](https://en.wikipedia.org/wiki/Continuous_delivery), based on [GitHub
